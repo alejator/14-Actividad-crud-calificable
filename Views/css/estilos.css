@@ -1,0 +1,179 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body{
+    background: url(bgpic.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+}
+.header{
+    background-color: #a6cbff;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 50px;
+    padding: 5px 10%;
+}
+#logo{
+    text-decoration: none;
+    color: #000;
+    
+}
+header .nav-links{
+    list-style: none;
+}
+
+header .nav-links li{
+    display: inline-block;
+    padding: 20px 20px 20px 20px;    
+}
+.header .nav-links a{
+    font-size: large;
+    color: #000;
+    text-decoration: none;    
+}
+
+.forms{
+    background-color: #a6cbff;
+    margin: 18px auto;
+    padding: 20px; 
+    border-style: solid; 
+    border-width: 3px;
+    border-color: #a6cbff;
+    border-radius: 15px; 
+    height: auto;
+    display: block;
+    text-align: center;
+    width: 40%;
+}
+.formlabel{
+    display: block;
+    font-weight: 700;
+    padding: 10px;
+    cursor: pointer;
+}
+.groupinput{
+    position: relative;
+}
+.forminput{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+    transform: .3s ease all;
+}
+.forminput:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+.forminputerror{
+    font-size: 12px;
+    margin-bottom: 0;
+    display: none;
+}
+.forminputerror-activo{
+    display: block;
+}
+.formvalestado{
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+    z-index: 100;
+    font-size: 16px;
+    opacity: 0;
+}
+.formmessage{
+    height: 45px;
+    line-height: 45px;
+    background: #F66060;
+    padding: 0 15px;
+    border-radius: 3px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: none;
+}
+.formmessage-activo{
+    display: block;
+}
+.formulariogrupobtnenviar{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.formulariobtn{
+    height: 45px;
+    line-height: 45px;
+    width: 30%;
+    background: #000;
+    color: #fff;
+    font-weight: bold;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+    transition: .1 ease all;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+.formulariobtn:hover{
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 1);
+}
+
+.especialidad{
+    width: 100%;
+    background-color: #fff;
+    border: 3px solid transparent;
+    border-radius: 3px;
+    height: 45px;
+    line-height: 45px;
+    padding: 0 40px 0 10px;
+}
+
+.especialidad:focus{
+    border: 3px solid #0075FF;
+    outline: none;
+    box-shadow: 3px 0px 30px rgba(163, 163, 163, 0.4);
+}
+
+/*estilos validación*/
+
+
+.formulariogrupo-incorrecto .formlabel{
+    color: #bb2929;
+
+}
+
+.formulariogrupo-incorrecto .formvalestado{
+    color: #bb2929;
+    opacity: 1;
+}
+
+.formulariogrupo-incorrecto .forminput{
+    border: 3px solid #bb2929;
+}
+
+.card-group{
+    margin: 18px;
+    text-align: center;
+}
+
+#tabladoctores{
+    margin: 18px;
+    text-align: center;
+}
+
+#tablapacientes{
+    margin: 18px;
+    text-align: center;
+}
+
+#parteprincipal{
+    margin: 18px;
+}
+

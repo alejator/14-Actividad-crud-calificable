@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="/">
+    <link rel="stylesheet" href="css/estilos.css" type="text/css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <title>Document</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+        <h3 class="icon-health"><a href="/" id="logo">Centro Médico Vital Care</a></h3>
+        </div>
+        <nav>
+            <ul class="nav-links">
+                 <li><a href="/formdoctores">Doctores</a></li>
+                 <li><a href="/formpacientes">Pacientes</a></li>
+                 <li><a href="/formcitas">Citas</a></li>
+                 <li><a href="/paglistas">Listas</a></li>
+            </ul>            
+         </nav>
+    </header>
+    <main>
+        <form class="forms" id="formspac" action="/salvarpaciente" method="post">
+            <h3>Formulario Pacientes</h3>
+            
+            <!--Cedula pacientes-->
+            <div class="formulariogrupo" id="grupo__cedulapac">
+                <label for="cedulapac" class="formlabel">Cédula:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="cedulapac" id="cedulapac" type="number" placeholder="Ingrese su cédula">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">La cédula solo puede contener de 7 a 10 digitos sin espacios ni puntos</p>
+            </div> 
+
+            <!--Nombre pacientes-->
+            <div class="formulariogrupo" id="grupo__nombrepac">
+                <label for="nombrepac" class="formlabel">Nombre:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="nombrepac" id="nombrepac" type="text" placeholder="Ingrese su nombre">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El nombre solo puede contener letras</p>
+            </div>
+            <!--Apellido pacientes-->
+            <div class="formulariogrupo" id="grupo__apellidopac">
+                <label for="apellidopac" class="formlabel">Apellido:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="apellidopac" id="apellidopac" type="text" placeholder="Ingrese su apellido">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El apellido solo puede contener letras</p>
+            </div>
+            
+            <!--Edad pacientes-->
+            <div class="formulariogrupo" id="grupo__edadpac">
+                <label for="edadpac" class="formlabel">Edad:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="edadpac" id="edadpac" type="number" placeholder="Ingrese su edad">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">Ingrese una edad válida</p>
+            </div> 
+            <!--Telefono pacientes-->
+            <div class="formulariogrupo" id="grupo__telefonopac">
+                <label for="telefonopac" class="formlabel">Teléfono:</label>
+                    <div class="groupinput">
+                        <input class="forminput" name="telefonopac" id="telefonopac" type="tel" placeholder="Ingrese su teléfono">
+                        <i class="formvalestado fa-solid fa-circle-xmark"></i>
+                    </div>
+                    <p class="forminputerror">El teléfono debe contener 7 o 9 números</p>
+            </div> 
+            <!--Mensaje pacientes-->
+            <div class="formmessage" id="formmessagepac">
+            <p><i class="fa-solid fa-triangle-exclamation"></i> <b>Error</b> Por favor llene el formulario correctamente</p>
+            </div>
+            <!--boton pacientes-->
+            <div class="formulariogrupo formulariogrupobtnenviar">
+                <button type="submit" class="formulariobtn" id="formmensexitopac">Enviar</button>
+            </div>
+        </form> 
+    </main>
+    
+</body>
+<script src="validacionpac.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+</html>
